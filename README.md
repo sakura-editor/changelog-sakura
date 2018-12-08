@@ -21,14 +21,15 @@ https://developer.github.com/v3/#rate-limiting
 
 サクラエディタでは、匿名アクセスの制限では足りないので、制限を緩和するために Access Token を使用します。
 
-### GitHub Access Token の使用方法
+### GitHub Access Token の作成方法
+
+**注意: この GitHub Access Token はアカウント名とパスワードをあわせたものと同等なので誤って漏れないように注意してください。**
 
 1. https://github.com/settings/tokens/new にアクセスします。
-2. 以下画面で、`Token description` にわかり易い名前をつけた上で、`repo` にチェックを付けて、`Generate token` を押します。
+2. 以下画面で、`Token description` にわかり易い名前をつけた上で、`repo` の `public_repo` にチェックを付けて、`Generate token` を押します。(`repo` 全体にチェックをつける必要はありません。)
    ![Access Token](image/generate-access-token.png)
 3. Access Token が生成されるのでクリップボードにコピーします。
 
-**注意: この GitHub Access Token はアカウント名とパスワードをあわせたものと同等なので誤って漏れないように注意してください。**
 
 ## github_changelog_generator のインストール
 
