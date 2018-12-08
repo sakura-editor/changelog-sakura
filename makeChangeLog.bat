@@ -6,7 +6,7 @@ call %~dp0env-set.bat
 
 set ACCOUNTNAME=sakura-editor
 set PROJECTNAME=sakura
-set OUTFILENAME=ChangeLog.md
+set OUTFILENAME=CHANGELOG.md
 
 if not defined CHANGELOG_GITHUB_TOKEN (
 	@echo 1. you need to define env variable CHANGELOG_GITHUB_TOKEN in advance.
