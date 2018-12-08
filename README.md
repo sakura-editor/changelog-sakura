@@ -81,7 +81,7 @@ appveyor の設定画面で暗号化した上で設定します。
 
 ![環境変数追加1](image/env1.png)
 
-2. `Environment Variable` に `CHANGELOG_GITHUB_TOKEN`と入力して、その右に実際の値を設定します。
+2. エディットボックスに `CHANGELOG_GITHUB_TOKEN`と入力して、その右に実際の値を設定します。
 3. そして、鍵ボタンを押します。(**重要**)
 
 ![環境変数追加2](image/env2.png)
