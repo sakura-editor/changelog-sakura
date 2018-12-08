@@ -5,6 +5,7 @@ install:
   - call installChangeLog.bat
 
 build_script:
+  - echo TEST %TEST%
   - call makeChangeLog.bat
 
 artifacts:
