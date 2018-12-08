@@ -1,6 +1,10 @@
 version: 1.0.{build}
 image: Visual Studio 2017
 
+environment:
+  CHANGELOG_GITHUB_TOKEN:
+    secure: buBWtAa04hCnz74nMONW8pZgTY9sx7fdKOPXpTsMs4JoxjWX/LRUBRcmlSjpvo1a
+
 install:
   - call installChangeLog.bat
 
