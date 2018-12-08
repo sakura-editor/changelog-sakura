@@ -1,5 +1,7 @@
 # sakura editor の ChangeLog を生成するためのリポジトリです。
 
+[![Build status](https://ci.appveyor.com/api/projects/status/9lapqyq8h7ak1otj/branch/master?svg=true)](https://ci.appveyor.com/project/sakuraeditor/changelog-sakura/branch/master)
+
 ## ChangeLog の生成方法
 
 [github_changelog_generator](https://github.com/github-changelog-generator/github-changelog-generator) を
