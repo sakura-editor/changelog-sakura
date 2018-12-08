@@ -69,3 +69,22 @@ generateChangeLog.bat
 ```
 github_changelog_generator --help
 ```
+
+## appveyor での実行
+
+appveyor で実行するときに `CHANGELOG_GITHUB_TOKEN` の環境変数を設定します。
+その際、プレーンテキストで appveyor.yml に保存しなくていいように 
+appveyor の設定画面で暗号化した上で設定します。
+
+1. 設定画面に移動し、`Environment` を選び、`Add variable` を選びます。
+
+![環境変数追加1](image/env1.png)
+
+2. `Environment Variable` に `CHANGELOG_GITHUB_TOKEN`と入力して、その右に実際の値を設定します。
+3. そして、鍵ボタンを押します。(**重要**)
+
+![環境変数追加2](image/env2.png)
+
+4. 画面の下までスクロールして `Save`を押します。(**重要**)
+
+![環境変数追加3](image/env3.png)
