@@ -47,7 +47,7 @@ installLog.bat
 gem install github_changelog_generator
 ```
 
-installLog.bat は Python 2.5 を想定していますが、PATH を通せば他のバージョンでも構いません。
+installLog.bat は Ruby 2.5 を想定していますが、PATH を通せば他のバージョンでも構いません。
 
 ## github_changelog_generator の実行
 
