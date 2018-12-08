@@ -62,10 +62,10 @@ set CHANGELOG_GITHUB_TOKEN=XXXXX
 以下バッチファイルを実行します。
 
 ```
-generateChangeLog.bat
+makeChangeLog.bat
 ```
 
-以下でヘルプが表示されるのでいろんなオプションを試すことができます。
+以下コマンドで `github_changelog_generator` のヘルプが表示されるのでいろんなオプションを確認することができます。
 
 ```
 github_changelog_generator --help
