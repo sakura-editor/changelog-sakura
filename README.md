@@ -131,8 +131,8 @@ Pull Request の送り元ブランチが、同じリポジトリの場合のみ�
 |条件|APPVEYOR_REPO_NAME|APPVEYOR_PULL_REQUEST_HEAD_REPO_NAME|secure 変数|処理実行の可否|
 |--|--|--|--|--|
 |ローカルビルド|空|空 (※1)|-|○|
-|ブランチの appveyor ビルドの場合 (Fork)|xxx/changelog-sakura|空 (※1)|○|○|
-|ブランチの appveyor ビルドの場合 (sakura-editor)|sakura-editor/changelog-sakura|空 (※1)|○ (UI で設定した場合)|○|
+|ブランチの appveyor ビルドの場合 (Fork)|xxx/changelog-sakura|空 (※1)|○ (UI で設定した場合)|○|
+|ブランチの appveyor ビルドの場合 (sakura-editor)|sakura-editor/changelog-sakura|空 (※1)|○|○|
 |PR (送信元: Fork のブランチ)|sakura-editor/changelog-sakura|xxx/changelog-sakura|×|×|
 |PR (送信元: sakura-editor のブランチ)|sakura-editor/changelog-sakura|sakura-editor/changelog-sakura (※2)|○|○|
 
