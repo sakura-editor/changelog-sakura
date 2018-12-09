@@ -117,8 +117,12 @@ environment:
 
 Pull Request 内では secure 変更は基本的には無効になります。
 
-ただし、`Enable secure variables in Pull Requests from the same repository only` の設定を有効にした場合
+ただし、`Settings` → `General` の `Enable secure variables in Pull Requests from the same repository only` の設定を有効にした場合
 Pull Request の送り元ブランチが、同じリポジトリの場合のみ例外的に secure 変数が有効になります。
+
+**設定変更後、忘れずに Save する必要があります。**
+
+![Enable secure variables in Pull Requests from the same repository only](image/enable-secure-variables-in-pull-requests-from-same-repo.png)
 
 参考: https://github.com/appveyor/ci/issues/2355#issuecomment-390803634
 
