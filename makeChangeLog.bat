@@ -7,6 +7,7 @@ call %~dp0env-set.bat
 set ACCOUNTNAME=sakura-editor
 set PROJECTNAME=sakura
 set OUTFILENAME=CHANGELOG.md
+set EXCLUDELABELS=duplicate,question,invalid,wontfix,CI,management,refactoring
 
 @echo.
 @echo INFO: APPVEYOR_REPO_NAME                   = %APPVEYOR_REPO_NAME%
@@ -37,11 +38,11 @@ if not defined CHANGELOG_GITHUB_TOKEN (
 	exit /b 1
 )
 
-github_changelog_generator                                                               ^
-	-u %ACCOUNTNAME%                                                                     ^
-	-p %PROJECTNAME%                                                                     ^
-	-o %OUTFILENAME%                                                                     ^
-	--exclude-labels duplicate,question,invalid,wontfix,CI,management,refactoring        ^
-	--cache-file %TEMP%\github-changelog-http-cache                                      ^
+github_changelog_generator                           ^
+	-u %ACCOUNTNAME%                                 ^
+	-p %PROJECTNAME%                                 ^
+	-o %OUTFILENAME%                                 ^
+	--exclude-labels %EXCLUDELABELS%                 ^
+	--cache-file %TEMP%\github-changelog-http-cache  ^
 	--cache-log  %TEMP%\github-changelog-logger.log
 endlocal
