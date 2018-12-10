@@ -24,7 +24,7 @@ if not defined APPVEYOR_PULL_REQUEST_HEAD_REPO_NAME (
 
 if not defined SECURE_VAR_IS_VALID (
 	@echo secure variable is valid only in a PR from the same repository or in a branch build.
-	@echo secure variable is available in this build, so skip build.
+	@echo secure variable is not available in this build, so skip build.
 	endlocal
 	exit /b 0
 )
