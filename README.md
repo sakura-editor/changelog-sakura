@@ -2,7 +2,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/9lapqyq8h7ak1otj/branch/master?svg=true)](https://ci.appveyor.com/project/sakuraeditor/changelog-sakura/branch/master)
 
-このリポジトリでは [サクラエディタ](https://github.com/sakura-editor/sakura) の Issue や Pull Request などの情報を外部ツールを使って 自動的に Markdown の形式で ChangeLog を生成するためのプロジェクトです。
+このリポジトリは [サクラエディタ](https://github.com/sakura-editor/sakura) の Issue や Pull Request などの情報を元に外部ツールを使って 自動的に Markdown の形式で ChangeLog を生成するためのプロジェクトです。
 
 どのようなオプション(除外するタグなど)を外部ツールに渡して markdown の生成を行うかは検討中です。
 何か提案等あれば issue への登録をお願いします。
