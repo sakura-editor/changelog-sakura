@@ -2,6 +2,19 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/9lapqyq8h7ak1otj/branch/master?svg=true)](https://ci.appveyor.com/project/sakuraeditor/changelog-sakura/branch/master)
 
+## 生成した `CHANGELOG.md` のダウンロードおよびローカルの確認
+
+### ダウンロード先
+
+appveyor で生成した `CHANGELOG.md` は以下からダウンロードできます。
+
+https://ci.appveyor.com/project/sakuraeditor/changelog-sakura/build/artifacts 
+
+### ダウンロードした `CHANGELOG.md` の確認方法
+
+`CHANGELOG.md` は [Visual Studio Code](https://code.visualstudio.com/) をインストールした上で [Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles) をインストールしてプレビュー表示することで
+GitHub で見るのと同様の見た目で内容を確認できます。
+
 ## ChangeLog の生成方法
 
 [github_changelog_generator](https://github.com/github-changelog-generator/github-changelog-generator) を
