@@ -1,2 +1,2 @@
 @echo off
-PATH=C:\Ruby25-x64\bin;C:\Ruby25\bin;%PATH%
+PATH=C:\Ruby24-x64\bin;C:\Ruby24\bin;%PATH%
