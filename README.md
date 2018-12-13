@@ -158,3 +158,15 @@ Pull Request の送り元ブランチが、同じリポジトリの場合のみ�
 
 - `APPVEYOR_PULL_REQUEST_HEAD_REPO_NAME` が空の場合 (※1)
 - (上記は当てはまらなくて) `APPVEYOR_REPO_NAME` と `APPVEYOR_PULL_REQUEST_HEAD_REPO_NAME` の値が等しい場合 (※2)
+
+### appveyor での 定期実行
+
+[サクラエディタ](https://github.com/sakura-editor/sakura) のリポジトリと、このリポジトリは別なので
+定期的に実行して最新の `CHANGELOG.md` が生成されるようにします。
+
+日本時間 AM 3:00 に master に対して自動的にビルドが走ります。
+
+参考
+
+- https://github.com/sakura-editor/changelog-sakura/issues/6
+
