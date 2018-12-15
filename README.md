@@ -2,10 +2,38 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/9lapqyq8h7ak1otj/branch/master?svg=true)](https://ci.appveyor.com/project/sakuraeditor/changelog-sakura/branch/master)
 
+<!-- TOC -->
+
+- [sakura editor の ChangeLog を生成するためのリポジトリです。](#sakura-editor-の-changelog-を生成するためのリポジトリです)
+    - [`CHANGELOG.md` に関して](#changelogmd-に関して)
+    - [生成した `CHANGELOG.md` のダウンロードおよびローカルの確認](#生成した-changelogmd-のダウンロードおよびローカルの確認)
+        - [ダウンロード先](#ダウンロード先)
+        - [ダウンロードした `CHANGELOG.md` の確認方法](#ダウンロードした-changelogmd-の確認方法)
+    - [ChangeLog の生成方法](#changelog-の生成方法)
+        - [github_changelog_generator の使い方のドキュメント](#github_changelog_generator-の使い方のドキュメント)
+    - [GitHub Access Token](#github-access-token)
+        - [GitHub Access Token に関して](#github-access-token-に関して)
+        - [GitHub Access Token の作成方法](#github-access-token-の作成方法)
+    - [github_changelog_generator のインストール](#github_changelog_generator-のインストール)
+    - [github_changelog_generator の実行](#github_changelog_generator-の実行)
+        - [GitHub Access Token の設定](#github-access-token-の設定)
+        - [実行](#実行)
+    - [appveyor での実行](#appveyor-での実行)
+        - [appveyor での secure 変数](#appveyor-での-secure-変数)
+            - [有効となる条件](#有効となる条件)
+            - [有効か判定するロジック](#有効か判定するロジック)
+        - [appveyor での 定期実行](#appveyor-での-定期実行)
+
+<!-- /TOC -->
+
 このリポジトリは [サクラエディタ](https://github.com/sakura-editor/sakura) の Issue や Pull Request などの情報を元に外部ツールを使って 自動的に Markdown の形式で ChangeLog を生成するためのプロジェクトです。
 
 どのようなオプション(除外するタグなど)を外部ツールに渡して markdown の生成を行うかは検討中です。
 何か提案等あれば issue への登録をお願いします。
+
+## `CHANGELOG.md` に関して
+
+[CHANGELOG.mdについて](https://github.com/sakura-editor/sakura/wiki/CHANGELOG.md%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6) のページに`CHANGELOG.md` に関する説明を記載しています。
 
 ## 生成した `CHANGELOG.md` のダウンロードおよびローカルの確認
 
@@ -17,8 +45,9 @@ https://ci.appveyor.com/project/sakuraeditor/changelog-sakura/build/artifacts
 
 ### ダウンロードした `CHANGELOG.md` の確認方法
 
-`CHANGELOG.md` は [Visual Studio Code](https://code.visualstudio.com/) をインストールした上で [Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles) をインストールしてプレビュー表示することで
-GitHub で見るのと同様の見た目で内容を確認できます。
+ダウンロードした `CHANGELOG.md` は
+[Markdown をローカルで確認する方法](https://github.com/sakura-editor/sakura/wiki/markdown-%E3%82%92%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%A7%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95)
+で説明している手順でローカルで確認できます。 
 
 ## ChangeLog の生成方法
 
