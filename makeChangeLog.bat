@@ -4,10 +4,14 @@ setlocal
 
 call %~dp0env-set.bat
 
+REM 日本語を扱えるように内部エンコーディングを UTF-8 にする
+set RUBYOPT=-EUTF-8:UTF-8
+
 set ACCOUNTNAME=sakura-editor
 set PROJECTNAME=sakura
 set OUTFILENAME=CHANGELOG.md
 set EXCLUDELABELS=duplicate,question,invalid,wontfix,CI,management,refactoring
+set BREAKING_LABELS="specification change"
 
 @echo.
 @echo INFO: APPVEYOR_REPO_NAME                   = %APPVEYOR_REPO_NAME%
@@ -43,6 +47,8 @@ github_changelog_generator                           ^
 	-p %PROJECTNAME%                                 ^
 	-o %OUTFILENAME%                                 ^
 	--exclude-labels %EXCLUDELABELS%                 ^
+	--breaking-labels %BREAKING_LABELS%              ^
 	--cache-file %TEMP%\github-changelog-http-cache  ^
 	--cache-log  %TEMP%\github-changelog-logger.log
+
 endlocal
