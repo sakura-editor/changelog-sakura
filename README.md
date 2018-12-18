@@ -15,6 +15,8 @@
         - [GitHub Access Token に関して](#github-access-token-に関して)
         - [GitHub Access Token の作成方法](#github-access-token-の作成方法)
     - [github_changelog_generator のインストール](#github_changelog_generator-のインストール)
+        - [通常版を使用](#通常版を使用)
+        - [GitHub から任意のバージョンを取得して使用](#github-から任意のバージョンを取得して使用)
     - [github_changelog_generator の実行](#github_changelog_generator-の実行)
         - [GitHub Access Token の設定](#github-access-token-の設定)
         - [実行](#実行)
@@ -82,19 +84,26 @@ https://developer.github.com/v3/#rate-limiting
 
 ## github_changelog_generator のインストール
 
+Ruby 2.5 を想定していますが、PATH を通せば他のバージョンでも構いません。
+あるいは `env-set.bat` をローカルで書き換えてもいいです。
 Ruby が利用可能な環境で以下を実行します。
 
-```
-installLog.bat
-```
+### 通常版を使用
 
-あるいは
+バッチファイルで指定されているバージョンの [github_changelog_generator](https://github.com/github-changelog-generator/github-changelog-generator) を gem で取得してインストールします。
 
 ```
-gem install github_changelog_generator
+installChangeLog.bat
 ```
 
-installLog.bat は Ruby 2.5 を想定していますが、PATH を通せば他のバージョンでも構いません。
+### GitHub から任意のバージョンを取得して使用
+
+```
+installChangeLogFromGitHub.bat [version]
+```
+
+- `version` を省略すると [github_changelog_generator](https://github.com/github-changelog-generator/github-changelog-generator) の `master` を取得してインストールします。
+- `version` には [github_changelog_generator](https://github.com/github-changelog-generator/github-changelog-generator) で有効なタグ、ブランチ、コミットハッシュなど `git checkout` に指定できるcommit を特定する情報を指定します。
 
 ## github_changelog_generator の実行
 
