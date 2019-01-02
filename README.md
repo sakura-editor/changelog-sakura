@@ -26,9 +26,9 @@ issue への登録をお願いします。
 ### 生成した変更履歴のダウンロード
 
 [日本時間 AM 3:00 に毎日 master に対して](https://github.com/sakura-editor/changelog-sakura/issues/6
-) 自動的に [appveyor](https://ci.appveyor.com/project/sakuraeditor/changelog-sakura) で自動的にビルドするので最新のものをダウンロードできます。
+) 自動的に [appveyor](https://ci.appveyor.com/project/sakuraeditor/changelog-sakura) でビルドされるので最新のものをダウンロードできます。
 
-最新でなくてもよければ [こちら](https://github.com/sakura-editor/sakura/wiki/CHANGELOG.md%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88) からブラウザて確認できます。
+最新でなくてもよければ [こちら](https://github.com/sakura-editor/sakura/wiki/CHANGELOG.md%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88) からブラウザで確認できます。
 
 #### ダウンロード先
 
@@ -45,6 +45,6 @@ https://ci.appveyor.com/project/sakuraeditor/changelog-sakura/build/artifacts
 [`CHANGELOG.md` を生成するための仕組み](Structure.md) を参照してください。
 
 
-## appveyor の設定方法説明
+## appveyor の設定方法の説明
 
 [appveyor の設定方法](appveyor.md) を参照してください。
