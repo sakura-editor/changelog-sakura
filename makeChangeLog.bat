@@ -49,6 +49,8 @@ github_changelog_generator                           ^
 	--exclude-labels %EXCLUDELABELS%                 ^
 	--breaking-labels %BREAKING_LABELS%              ^
 	--cache-file %TEMP%\github-changelog-http-cache  ^
-	--cache-log  %TEMP%\github-changelog-logger.log
+	--cache-log  %TEMP%\github-changelog-logger.log  ^
+	--no-issues                                      ^
+	--no-issues-wo-labels                            
 
 endlocal
