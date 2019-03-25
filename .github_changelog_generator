@@ -1,4 +1,4 @@
-future-release=2.4.0-alpha1
+unreleased-label=2.4.0-alpha1
 bugs-label=### バグ修正
 enhancement-label=### 機能追加
 breaking-label=### 仕様変更
