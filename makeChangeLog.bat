@@ -58,6 +58,6 @@ call github_changelog_generator                      ^
 REM issues を除外する
 REM (github_changelog_generator の --no-issues ではカテゴリ分類が消えるため)
 
-perl -pe "s/^-.*?[^)]\)\n//g; s/\*\*Closed issues:\*\*\n//g;" %OUTFILENAME% > %OUTFILENAME_WITHOUT_ISSUES%
+perl -pe "{binmode(STDOUT)} s/^-.*\/issues\/\d+\)\n//g; s/\*\*Closed issues:\*\*\n//g;" %OUTFILENAME% > %OUTFILENAME_WITHOUT_ISSUES%
 
 endlocal
