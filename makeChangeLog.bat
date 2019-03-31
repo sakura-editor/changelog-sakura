@@ -10,6 +10,7 @@ set RUBYOPT=-EUTF-8:UTF-8
 set ACCOUNTNAME=sakura-editor
 set PROJECTNAME=sakura
 set OUTFILENAME=CHANGELOG.md
+set OUTFILENAME_WITHOUT_ISSUES=CHANGELOG_without_issues.md
 set EXCLUDELABELS=duplicate,question,invalid,wontfix,CI,management,refactoring,no-changelog
 set BREAKING_LABELS="specification change"
 
@@ -42,7 +43,7 @@ if not defined CHANGELOG_GITHUB_TOKEN (
 	exit /b 1
 )
 
-github_changelog_generator                           ^
+call github_changelog_generator                      ^
 	-u %ACCOUNTNAME%                                 ^
 	-p %PROJECTNAME%                                 ^
 	-o %OUTFILENAME%                                 ^
@@ -50,5 +51,13 @@ github_changelog_generator                           ^
 	--breaking-labels %BREAKING_LABELS%              ^
 	--cache-file %TEMP%\github-changelog-http-cache  ^
 	--cache-log  %TEMP%\github-changelog-logger.log
+
+@echo.
+@echo filter issues
+@echo.
+REM issues を除外する
+REM (github_changelog_generator の --no-issues ではカテゴリ分類が消えるため)
+
+perl -pe "s/^-.*?[^)]\)\n//g; s/\*\*Closed issues:\*\*\n//g;" %OUTFILENAME% > %OUTFILENAME_WITHOUT_ISSUES%
 
 endlocal
