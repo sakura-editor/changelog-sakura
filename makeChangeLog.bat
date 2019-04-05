@@ -10,7 +10,7 @@ set RUBYOPT=-EUTF-8:UTF-8
 set ACCOUNTNAME=sakura-editor
 set PROJECTNAME=sakura
 set OUTFILENAME=CHANGELOG.md
-set EXCLUDELABELS=duplicate,question,invalid,wontfix,CI,management,refactoring
+set EXCLUDELABELS=duplicate,question,invalid,wontfix,CI,management,refactoring,no-changelog
 set BREAKING_LABELS="specification change"
 
 @echo.
