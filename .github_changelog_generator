@@ -2,3 +2,4 @@ bugs-label=### バグ修正
 enhancement-label=### 機能追加
 breaking-label=### 仕様変更
 pr-label=### その他変更
+bug-labels=bug,Bug,🐛bug🦋
