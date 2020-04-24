@@ -8,7 +8,7 @@ environment:
     secure: buBWtAa04hCnz74nMONW8pZgTY9sx7fdKOPXpTsMs4JoxjWX/LRUBRcmlSjpvo1a
 
 install:
-  - call installChangeLog.bat
+  - call installChangeLogFromGitHub.bat
 
 build_script:
   - call makeChangeLog.bat
