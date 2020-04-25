@@ -13,6 +13,7 @@ set OUTFILENAME=CHANGELOG.md
 set OUTFILENAME_WITHOUT_ISSUES=CHANGELOG_without_issues.md
 set EXCLUDELABELS=duplicate,question,invalid,wontfix,CI,management,refactoring,no-changelog
 set BREAKING_LABELS="specification change"
+set EXCLUDETAGS=v2.4.0-alpha1,v2.4.0-beta,v2.4.0-beta2,v2.4.0-beta3,v2.4.0-beta4,v2.4.0-beta5
 
 @echo.
 @echo INFO: APPVEYOR_REPO_NAME                   = %APPVEYOR_REPO_NAME%
@@ -47,6 +48,7 @@ call github_changelog_generator                      ^
 	-u %ACCOUNTNAME%                                 ^
 	-p %PROJECTNAME%                                 ^
 	-o %OUTFILENAME%                                 ^
+	--exclude-tags %EXCLUDETAGS%                     ^
 	--exclude-labels %EXCLUDELABELS%                 ^
 	--breaking-labels %BREAKING_LABELS%              ^
 	--cache-file %TEMP%\github-changelog-http-cache  ^
