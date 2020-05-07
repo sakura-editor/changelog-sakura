@@ -49,6 +49,7 @@ call github_changelog_generator                      ^
 	-o %OUTFILENAME%                                 ^
 	--exclude-labels %EXCLUDELABELS%                 ^
 	--breaking-labels %BREAKING_LABELS%              ^
+	--no-filter-by-milestone                         ^
 	--cache-file %TEMP%\github-changelog-http-cache  ^
 	--cache-log  %TEMP%\github-changelog-logger.log  || (echo error run github_changelog_generator && exit /b 1)
 
