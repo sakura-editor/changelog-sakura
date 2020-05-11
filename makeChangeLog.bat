@@ -11,7 +11,7 @@ set ACCOUNTNAME=sakura-editor
 set PROJECTNAME=sakura
 set OUTFILENAME=CHANGELOG.md
 set OUTFILENAME_WITHOUT_ISSUES=CHANGELOG_without_issues.md
-set EXCLUDELABELS=duplicate,question,invalid,wontfix,CI,management,refactoring,no-changelog
+set EXCLUDELABELS=CI,CodeFactor,duplicate,environment,Git,management,no-changelog,question,refactoring,Release,research
 set BREAKING_LABELS="specification change"
 
 @echo.
